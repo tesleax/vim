@@ -1,3 +1,5 @@
+"For Gnome-Terminal"
+set t_Co=256
 execute pathogen#infect()
 syntax on
 colorscheme badwolf 
