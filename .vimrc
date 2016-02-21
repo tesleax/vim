@@ -43,6 +43,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'eodus/auto-pairs'
 "learn b4 use it.
 Plugin 'w0ng/vim-hybrid'
@@ -51,6 +52,7 @@ Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'SirVer/ultisnips'
@@ -86,11 +88,24 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_error_symbol = "✗"
 let g:syntastic_warning_symbol = "✗"
 
-" Vim-Airline in 
-	
+" Vim-Airline
+
 let g:airline_theme='bubblegum'
 set laststatus=2
 let g:airline_powerline_fonts=1
+let g:airline_mode_map = {
+			\ '__' : '-',
+			\ 'n'  : 'N',
+			\ 'i'  : 'I',
+			\ 'R'  : 'R',
+			\ 'c'  : 'C',
+			\ 'v'  : 'V',
+			\ 'V'  : 'V',
+			\ '' : 'V',
+			\ 's'  : 'S',
+			\ 'S'  : 'S',
+			\ '' : 'S',
+			\ }
 
 " CtrlP
 
@@ -110,7 +125,7 @@ let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
-"navigate around tabs 
+"navigate around tabs
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
@@ -122,7 +137,7 @@ noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 
-"nerdtree-git plugin settings 
+"nerdtree-git plugin settings
 let g:NERDTreeIndicatorMapCustom = {
 			\ "Modified"  : "✹",
 			\ "Staged"    : "✚",
