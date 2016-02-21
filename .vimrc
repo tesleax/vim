@@ -1,6 +1,7 @@
 " For Gnome-Terminal"
 
 set t_Co=256
+set encoding=utf8
 
 " General Settings
 
@@ -44,13 +45,14 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'edkolev/tmuxline.vim'
 Plugin 'eodus/auto-pairs'
 "learn b4 use it.
 Plugin 'w0ng/vim-hybrid'
 Plugin 'tpope/vim-surround'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
