@@ -1,7 +1,6 @@
 " For Gnome-Terminal"
 
 set t_Co=256
-set encoding=utf8
 
 " General Settings
 
