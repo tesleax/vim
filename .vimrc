@@ -5,10 +5,11 @@ set t_Co=256
 " General Settings
 
 syntax on
-set background=dark
-"colorscheme dracula
 "colorscheme jellybeans
-colorscheme hybrid
+"colorscheme dracula
+colorscheme base16-gooey
+let base16colorspace=256
+set background=dark
 "your fav.
 set number
 set relativenumber
@@ -91,22 +92,8 @@ let g:syntastic_warning_symbol = "✗"
 
 " Vim-Airline
 
-let g:airline_theme='bubblegum'
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_mode_map = {
-			\ '__' : '-',
-			\ 'n'  : 'N',
-			\ 'i'  : 'I',
-			\ 'R'  : 'R',
-			\ 'c'  : 'C',
-			\ 'v'  : 'V',
-			\ 'V'  : 'V',
-			\ '' : 'V',
-			\ 's'  : 'S',
-			\ 'S'  : 'S',
-			\ '' : 'S',
-			\ }
 
 " CtrlP
 
@@ -149,6 +136,4 @@ let g:NERDTreeIndicatorMapCustom = {
 			\ "Dirty"     : "✗",
 			\ "Clean"     : "✔︎",
 			\ "Unknown"   : "?"
-			\ }
-
-let g:EclimCompletionMethod = 'omnifunc'
+\ }
